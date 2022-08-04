@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">/
+            <meta name="viewpoint" content="width=device-width, initial-scale=1">
+            <title>HBOMAX</title>
+            <style>
+                body {
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: black;
+                }               
+                
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    filter: invert(94%) sepia(66%) saturate(50%) hue-rotate(275deg) brightness(118%) contrast(100%);
+                    width: 165px;
+                }
+                
+                input {
+                    background-color: darkgrey;
+                    border-style: none;
+                    border-radius: 20px;
+                    margin-left: 658px;
+                    margin-top: 15px;
+                    height: 32px;
+                    width: 540px;
+                }
+                button {
+                    border-style: none;
+                    margin-top: 40px;
+                    font-size: 32px;
+                    color: white;
+                    background-color:mediumpurple;
+                    border-radius: 23px;
+                    padding: 5px 48px;
+                    transition: 0.3s;
+                }
+                button:hover {
+                    background-color: black;
+                    color: mediumpurple;
+                    border: 4px solid mediumpurple;
+                }
+                .header { 
+                    text-align: center;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                #menu, #assinar {
+                    margin-top: 8px;
+                    font-size: 20px;
+                }
+                #entrar {
+                    font-size: 25px;
+                } 
+                #temUmaConta {
+                    font-size: 28px;
+                }
+                .label {
+                    color: white;
+                    margin-left:660px;
+                    font-size: 22px;
+                }
+                #provedorPergunta {
+                    font-size: 20px;
+                    margin-top: 30px;
+                }
+            </style>
+        </head>
+        <body>
+            <img src="imagens/20200421170745!HBO_Max_Logo.svg">
+            <div class="header">
+                <div id="menu" class="texts">Menu</div>
+                <div id="assinar" class="texts">Assinar</div>
+                <div id="entrar" class="texts"><h1>Entrar</h1></div>
+                <div class="texts" id="temUmaConta"><p>Você tem uma conta HBO Max?</p></div>
+            </div>
+            <div>
+                <div><label id="label" class="label">E-mail</label></div>
+                <div id="emailInput">
+                    <input type="text" required>
+                </div>
+                <br>
+                <div><label id="label" class="label">Senha</label></div>
+                <div id="emailInput">
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="header">
+                <div id="enterButton"><button>Entrar</button></div>
+                <div id="provedorPergunta">
+                    Você acessa a HBO Max por um provedor de TV,<br>
+                    de internet ou celular?
+                </div>
+                <div><button>Entrar como provedor</button></div>
+            </div>
+        </body>
+    </html>
